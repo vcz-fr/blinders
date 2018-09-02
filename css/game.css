@@ -1,0 +1,29 @@
+body {
+    justify-content: space-around;
+}
+
+input {
+    text-align: center;
+    height: 5vh;
+}
+
+#blinder {
+    height: 2px;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+#blinder > span {
+    position: absolute;
+    font-weight: bolder;
+    font-size: 48px;
+    animation: scan 1s infinite linear;
+}
+
+@keyframes scan {
+    from {top: 100%}
+    to {top: -1em}
+}
